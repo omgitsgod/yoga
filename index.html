@@ -5,7 +5,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118158278-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() {dataLayer.push(arguments);
+  }
+
   gtag('js', new Date());
 
   gtag('config', 'UA-118158278-2');
@@ -71,7 +73,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <h1 class="text-uppercase tm-hero-title">Equanimity Yoga</h1>
-                            <p class="tm-hero-subtitle">August Theme: Finding your true north</p>
+                            <p class="tm-hero-subtitle">August Theme: Balancing</p>
                         </div>
                     </div>
                 </div>
@@ -206,48 +208,48 @@
 
         <script>
 
-            // Check scroll position and add/remove background to navbar
-            function checkScrollPosition() {
+// Check scroll position and add/remove background to navbar
+function checkScrollPosition() {
 
-                if($(window).width() < 767) {
-                    $(".tm-nav").removeClass("scroll");
-                    return;
-                }
+  if ($(window).width() < 767) {
+    $('.tm-nav').removeClass('scroll');
+    return;
+  }
 
-                if($(window).scrollTop() > 50) {
-                  $(".tm-nav").addClass("scroll");
-              } else {
-                  $(".tm-nav").removeClass("scroll");
-              }
-            }
+  if ($(window).scrollTop() > 50) {
+    $('.tm-nav').addClass('scroll');
+  } else {
+    $('.tm-nav').removeClass('scroll');
+  }
+}
 
-            $(document).ready(function () {
+$(document).ready(function () {
                 // Single page nav
                 $('.tm-nav').singlePageNav({
                     offset: 57,
                     filter: ':not(.external)',
-                    updateHash: true
-                });
+                    updateHash: true,
+                  });
 
                 checkScrollPosition();
 
                 // navbar
-                $('.navbar-toggle').click(function(){
+                $('.navbar-toggle').click(function () {
                     $('.main-menu').toggleClass('show');
-                });
+                  });
 
-                $('.main-menu a').click(function(){
+                $('.main-menu a').click(function () {
                     $('.main-menu').removeClass('show');
-                });
-            });
+                  });
+              });
 
-            $(window).on("scroll", function() {
+$(window).on('scroll', function () {
                 checkScrollPosition();
-            });
+              });
 
-            $('#tmNavbar a').click(function(){
+$('#tmNavbar a').click(function () {
                 $('#tmNavbar').collapse('hide');
-            });
+              });
 
         </script>
 
