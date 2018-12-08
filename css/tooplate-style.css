@@ -11,8 +11,8 @@ body {
 }
 
 #insta {
-width: 10%;
-height: 10%;
+max-width: 10%;
+height: auto;
 border-right: 25px;
 }
 
