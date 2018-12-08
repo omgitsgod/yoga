@@ -10,6 +10,11 @@ body {
 	overflow-x: hidden;
 }
 
+#insta {
+width: 50px;
+border-right: 25px;
+}
+
 button { cursor: pointer; }
 a, button { transition: all 0.3s ease; }
 a:hover,
